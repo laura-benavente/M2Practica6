@@ -1,87 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mockup Página</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <div class="menu-dropdown">
-            <button class="dropbtn">Idioma</button>
-            <div class="dropdown-content">
-                <a href="#">Inglés</a>
-                <a href="#">Español</a>
+    <header class="d-flex justify-content-between align-items-center gap-3 p-2 w-100">
+        <div class="d-flex justify-content-between align-items-left gap-2 flex-column h-100">
+            <div>
+                <select name="lang" id="lang-select" class="dropdown-container">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+
             </div>
+            <div>01/01/2025</div>
         </div>
-        <div class="date">01/01/2025</div>
-        <h1>LOREM IPSUM</h1>
-        <p><u>The Oldest Newsletter</u></p>
-        <div class="btn-container">
-            <button>Inicia Sesión</button>
-            <button>Suscríbete</button>
+
+        <div class="header__title-container">
+            <h1 class="text-center">LOREM IPSUM</h1>
+            <p class="text-center subtext"><u>The Oldest Newsletter</u></p>
+        </div>
+
+
+        <div class="d-flex justify-content-between align-items-right gap-2 flex-column h-100">
+            <button class="account-button">Inicia Sesión</button>
+            <button class="account-button">Suscríbete</button>
         </div>
     </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Entrevistas</a>
-        <a href="#">Sobre nosotros</a>
+
+
+    <nav class="d-flex flex-column flex-md-row text-center w-100">
+        <div class="col-12 col-md-3 p-2 nav_option">
+            <a href="#" class="fw-bold">Inicio</a>
+        </div>
+        <div class="col-12 col-md-3 p-2 nav_option">
+            <a href="#" class="fw-bold">Servicios</a>
+        </div>
+        <div class="col-12 col-md-3 p-2 nav_option">
+            <a href="#" class="fw-bold">Entrevistas</a>
+        </div>
+        <div class="col-12 col-md-3 p-2 nav_option">
+            <a href="#" class="fw-bold">Sobre nosotros</a>
+        </div>
     </nav>
-    <div class="container">
-        <div class="column">
-            <div class="box">
-                <h2>Esto sería un titular</h2>
-                <p>Nombre Autor</p>
-                <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia  parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
-            </div>
-            <div class="box">
-                <h2>Esto sería un titular</h2>
-                <p>Nombre Autor</p>
-                <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia  parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
-            </div>
-            <div class="box">
-                <h2>Esto sería un titular</h2>
-                <p>Nombre Autor</p>
-                <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia  parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
+
+
+    <div class="row container p-2 w-100 mx-auto">
+        <div class="column col-12 col-md-8">
+
+            <div class="d-flex flex-wrap col-12 flex-column flex-md-row">
+                <div class="col-12 col-md-6 mb-3 p-1">
+                    <div class="box">
+                        <h2>Esto sería un titular</h2>
+                        <p>Nombre Autor</p>
+                        <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de
+                            la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
+                    </div>
+                    <div class="box">
+                        <h2>Esto sería un titular</h2>
+                        <p>Nombre Autor</p>
+                        <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de
+                            la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
+                    </div>
+                    <div class="box">
+                        <h2>Esto sería un titular</h2>
+                        <p>Nombre Autor</p>
+                        <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de
+                            la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  mb-3 p-1">
+                    <div class="box">
+                        <img src="media/images/imagen.png" alt="Imagen de noticia grande" class="img-fluid w-100">
+                        <h2>Titular de la noticia a la que hace referencia la imagen</h2>
+                        <p>Nombre Autor</p>
+                        <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de
+                            la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia
+                            parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
+                    </div>
+                </div>
+
+                <div class="column col-12 col-md-12 p-1">
+
+                    <div class="box">
+                        <div class=" row w-100">
+                            <img src="media/images/imagen.png" alt="Imagen de noticia grande" class="img-fluid col-6">
+                            <div class="col-6">
+                                <h2 class="display-6 mt-3">TITULAR GRANDE DE LA NOTICIA A LA QUE HACE REFERENCIA LA
+                                    IMAGEN</h2>
+                                <p>Nombre Autor</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="column">
-            <div class="box">
-                <img src="media/images/imagen.png" alt="Imagen de noticia grande">
-                <h2>Titular de la noticia a la que hace referencia la imagen</h2>
-                <p>Nombre Autor</p>
-                <p>Parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia parte breve de la noticia.</p>
+
+        <div class="col-12 col-md-4 mt-2">
+            <div class="column p-1">
+                <aside>
+                    <div class="box">
+                        <img src="media/images/video.png" alt="Video de noticia" class="img-fluid w-100">
+                        <h2>Titular de la noticia a la que hace referencia el video</h2>
+                        <p>Nombre Autor</p>
+                    </div>
+                    <div class="box">
+                        <h2>Entrevista de la semana con: Xxxxx Xxxx</h2>
+                        <img src="media/images/video.png" alt="Entrevista video" class="img-fluid w-100">
+                    </div>
+                    <div class="btn-container-aside text-center mt-3">
+                        <button class="btn btn-secondary mb-2">Contacto</button>
+                        <button class="btn btn-secondary">Sugerencias</button>
+                    </div>
+                </aside>
             </div>
         </div>
-        <aside>
-            <div class="box">
-                <img src="media/images/video.png" alt="Video de noticia">
-                <h2>Titular de la noticia a la que hace referencia el video</h2>
-                <p>Nombre Autor</p>
-            </div>
-            <div class="box">
-                <h2>Entrevista de la semana con: Xxxxx Xxxx</h2>
-                <img src="media/images/video.png" alt="Entrevista video">
-            </div>
-            <div class="btn-container-aside">
-                <button>Contacto</button>
-                <button>Sugerencias</button>
-            </div>
-        </aside>
     </div>
-    <div class="large-news">
-        <div class="box">
-            <img src="media/images/imagen.png" alt="Imagen de noticia grande">
-            <h2>TITULAR GRANDE DE LA NOTICIA A LA QUE HACE REFERENCIA LA IMAGEN</h2>
-            <p>Nombre Autor</p>
-        </div>
-    </div>
+
     <footer>
         <a href="#"><img src="media/logo/twitter.png" alt="Twitter"></a>
         <a href="#"><img src="media/logo/instagram.png" alt="Instagram"></a>
         <a href="#"><img src="media/logo/youtube.png" alt="YouTube"></a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
