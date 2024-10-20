@@ -8,10 +8,22 @@ body {
 
 header {
     background-color: #bdc3c7;
-    padding: 10px;
-    height: 70px;
-    text-align: center;
-    position: relative;
+}
+
+.dropdown-container {
+    background-color: transparent;
+    border: none;
+    border-width: 0;
+}
+
+.dropdown-container:focus-visible {
+    outline: none;
+}
+
+.dropdown-container * {
+    padding: 8px;
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 header h1 {
@@ -20,81 +32,54 @@ header h1 {
 }
 
 header p {
+    display: none;
     margin: 0;
     margin-top: 10px;
 }
 
-.date {
-    position: absolute;
-    top: 50px;
-    left: 10px;
+@media screen and (min-width: 767px){
+    header p {
+        display: block;
+    }
 }
 
-.menu-dropdown {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-}
-
-.dropbtn {
-    background-color: #bdc3c7;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
+.account-button {
     cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.menu-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-header .btn-container {
-    position: absolute;
-    top: 4px;
-    right: 10px;
-}
-
-header .btn-container button {
-    display: block;
-    padding: 10px;
-    font-size: 12px;
-    margin: 5px 0;
-    margin-right: 10px ;
-    border: none;
     background-color: #95a5a6;
     color: white;
-    cursor: pointer;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #dfe6e9;
     padding: 10px;
+    font-size: 14px;
+    border: none;
 }
 
-nav a {
+.account-button:hover {
+    cursor: pointer;
+    background-color: #7f8b8c;
+}
+
+/* nav bar */
+nav {
+    background-color: #dfe6e9;
+}
+
+nav div a {
     text-decoration: none;
     color: #2c3e50;
-    font-weight: bold;
+}
+
+nav div a:hover {
+    color: #28b2e9;
+}
+
+.nav_option {
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 767px){
+    .nav_option {
+        border: none;
+        border-width: 0;
+    }
 }
 
 .container {
